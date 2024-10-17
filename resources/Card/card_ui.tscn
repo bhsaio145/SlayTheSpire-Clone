@@ -28,7 +28,7 @@ layout_mode = 0
 offset_right = 125.0
 offset_bottom = 150.0
 mouse_filter = 2
-color = Color(0.467449, 0.180022, 0.213026, 1)
+color = Color(0.467695, 0.187209, 0.162651, 1)
 
 [node name="DropDetector" type="Area2D" parent="."]
 collision_mask = 2

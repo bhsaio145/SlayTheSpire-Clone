@@ -1,13 +1,29 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729038790
+::res://::1729141860
+default_theme.tres::Theme::6375196601384446613::1729039420::0::1::::<><>::uid://7anolq42yehg::::res://assets/fonts/vinque rg.otf
 icon.svg::CompressedTexture2D::2902665713457868656::1729038194::1729038212::1::::<><>::
+README.md::TextFile::-1::1729141677::0::1::::<><>::
 ::res://assets/::1729039334
-::res://assets/fonts/::1729039346
+::res://assets/fonts/::1729039358
 vinque rg.otf::FontFile::2246857922266047636::1570991608::1729039358::1::::<><>::
-::res://scenes/::1729038537
-::res://scenes/battle/::1729038946
-battle_scene.tscn::PackedScene::4088677705668312448::1729038946::0::1::::<><>::
+::res://resources/::1729048805
+::res://resources/Card/::1729049418
+card_ui.gd::GDScript::-1::1729049082::0::1::::CardUI<>Control<>::
+card_ui.tscn::PackedScene::3152587869019180067::1729049418::0::1::::<><>::res://resources/Card/card_ui.gd<>res://resources/Card/Card States/card_state_machine.gd<>res://resources/Card/Card States/card_state_base.gd<>res://resources/Card/Card States/card_state_clicked.gd<>res://resources/Card/Card States/card_state_dragging.gd<>res://resources/Card/Card States/card_state_aiming.gd<>res://resources/Card/Card States/card_state_released.gd
+::res://resources/Card/Card States/::1729049418
+card_states.gd::GDScript::-1::1729048518::0::1::::CardStates<>Node<>::
+card_state_aiming.gd::GDScript::-1::1729045715::0::1::::<>CardStates<>::
+card_state_base.gd::GDScript::-1::1729048616::0::1::::<>CardStates<>::
+card_state_clicked.gd::GDScript::-1::1729047839::0::1::::<>CardStates<>::
+card_state_dragging.gd::GDScript::-1::1729049418::0::1::::<>CardStates<>::
+card_state_machine.gd::GDScript::-1::1729045529::0::1::::CardStateMachine<>Node<>::
+card_state_released.gd::GDScript::-1::1729049200::0::1::::<>CardStates<>::
+::res://scenes/::1729048785
+::res://scenes/battle/::1729049219
+battle_scene.tscn::PackedScene::4088677705668312448::1729049219::0::1::::<><>::uid://bk6ewq2xdo3sp::::res://resources/Card/card_ui.tscn<>res://scenes/ui/hand.gd
 ::res://scenes/character selection/::1729038530
 ::res://scenes/event/::1729038535
 ::res://scenes/main menu/::1729038524
 ::res://scenes/shop/::1729038521
+::res://scenes/ui/::1729048942
+hand.gd::GDScript::-1::1729048942::0::1::::<>HBoxContainer<>::
