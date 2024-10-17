@@ -1,0 +1,7 @@
+Node
+HBoxContainer
+CenterContainer
+CanvasLayer
+CollisionShape2D
+Area2D
+ColorRect

@@ -1,0 +1,11 @@
+res://scenes/battle/battle_scene.tscn
+res://default_theme.tres
+res://resources/Card/card_ui.tscn
+res://resources/Card/card_ui.gd
+res://resources/Card/Card States/card_states.gd
+res://resources/Card/Card States/card_state_machine.gd
+res://resources/Card/Card States/card_state_base.gd
+res://resources/Card/Card States/card_state_clicked.gd
+res://resources/Card/Card States/card_state_dragging.gd
+res://resources/Card/Card States/card_state_released.gd
+res://scenes/ui/hand.gd

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cw3gs6oqrelur"]
+
+[ext_resource type="FontFile" uid="uid://7anolq42yehg" path="res://assets/fonts/vinque rg.otf" id="1_i44jm"]
+
+[resource]
+default_font = ExtResource("1_i44jm")
