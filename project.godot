@@ -15,6 +15,10 @@ run/main_scene="res://scenes/battle/battle_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Events="*res://resources/global/events.gd"
+
 [display]
 
 window/size/viewport_width=1360
@@ -38,3 +42,4 @@ right_mouse={
 
 2d_physics/layer_1="Card Target Selector"
 2d_physics/layer_2="Card Drop Area"
+2d_physics/layer_3="Enemy"

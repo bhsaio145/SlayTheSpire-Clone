@@ -1,15 +1,28 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729141860
+::res://::1729210695
 default_theme.tres::Theme::6375196601384446613::1729039420::0::1::::<><>::uid://7anolq42yehg::::res://assets/fonts/vinque rg.otf
 icon.svg::CompressedTexture2D::2902665713457868656::1729038194::1729038212::1::::<><>::
-README.md::TextFile::-1::1729141677::0::1::::<><>::
-::res://assets/::1729039334
+README.md::TextFile::-1::1729142512::0::1::::<><>::
+::res://assets/::1729210903
+::res://assets/characters/::1729211566
+::res://assets/characters/bugeisha/::1729211144
+bugeisha_sprite.png::CompressedTexture2D::3493597105870596910::1543053036::1729211144::1::::<><>::
+::res://assets/characters/slime_normal/::1729211573
+slime_normal_sprite.png::CompressedTexture2D::1191072044055365303::1500558718::1729211590::1::::<><>::
 ::res://assets/fonts/::1729039358
 vinque rg.otf::FontFile::2246857922266047636::1570991608::1729039358::1::::<><>::
+::res://characters/::1729210730
+::res://characters/enemies/::1729210729
+::res://characters/players/::1729210890
+::res://characters/players/bugeisha/::1729210978
+::res://characters/players/bugeisha/cards/::1729211305
+bugeisha_slash.tres::Resource/Card::4698603255615882044::1729211305::0::1::::<><>::res://resources/Card/card.gd
+bugeisha_block.tres::Resource/Card::8206297584846413493::1729211305::0::1::::<><>::res://resources/Card/card.gd
 ::res://resources/::1729048805
-::res://resources/Card/::1729049418
-card_ui.gd::GDScript::-1::1729049082::0::1::::CardUI<>Control<>::
-card_ui.tscn::PackedScene::3152587869019180067::1729049418::0::1::::<><>::res://resources/Card/card_ui.gd<>res://resources/Card/Card States/card_state_machine.gd<>res://resources/Card/Card States/card_state_base.gd<>res://resources/Card/Card States/card_state_clicked.gd<>res://resources/Card/Card States/card_state_dragging.gd<>res://resources/Card/Card States/card_state_aiming.gd<>res://resources/Card/Card States/card_state_released.gd
+::res://resources/Card/::1729211436
+card_ui.gd::GDScript::-1::1729211436::0::1::::CardUI<>Control<>::
+card_ui.tscn::PackedScene::3152587869019180067::1729211436::0::1::::<><>::res://resources/Card/card_ui.gd<>res://resources/Card/Card States/card_state_machine.gd<>res://resources/Card/Card States/card_state_base.gd<>res://resources/Card/Card States/card_state_clicked.gd<>res://resources/Card/Card States/card_state_dragging.gd<>res://resources/Card/Card States/card_state_aiming.gd<>res://resources/Card/Card States/card_state_released.gd
+card.gd::GDScript::-1::1729211273::0::1::::Card<>Resource<>::
 ::res://resources/Card/Card States/::1729049418
 card_states.gd::GDScript::-1::1729048518::0::1::::CardStates<>Node<>::
 card_state_aiming.gd::GDScript::-1::1729045715::0::1::::<>CardStates<>::
@@ -19,8 +32,8 @@ card_state_dragging.gd::GDScript::-1::1729049418::0::1::::<>CardStates<>::
 card_state_machine.gd::GDScript::-1::1729045529::0::1::::CardStateMachine<>Node<>::
 card_state_released.gd::GDScript::-1::1729049200::0::1::::<>CardStates<>::
 ::res://scenes/::1729048785
-::res://scenes/battle/::1729049219
-battle_scene.tscn::PackedScene::4088677705668312448::1729049219::0::1::::<><>::uid://bk6ewq2xdo3sp::::res://resources/Card/card_ui.tscn<>res://scenes/ui/hand.gd
+::res://scenes/battle/::1729211452
+battle_scene.tscn::PackedScene::4088677705668312448::1729211452::0::1::::<><>::uid://bk6ewq2xdo3sp::::res://resources/Card/card_ui.tscn<>res://scenes/ui/hand.gd<>uid://b77bkrmwhme57::::res://characters/players/bugeisha/cards/bugeisha_slash.tres<>uid://do6gr00gv7vib::::res://characters/players/bugeisha/cards/bugeisha_block.tres
 ::res://scenes/character selection/::1729038530
 ::res://scenes/event/::1729038535
 ::res://scenes/main menu/::1729038524
