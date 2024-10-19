@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerStats" load_steps=4 format=3 uid="uid://dvea0gw2q4c25"]
+
+[ext_resource type="Script" path="res://resources/Stats/player_stats.gd" id="1_lobjn"]
+[ext_resource type="Texture2D" uid="uid://bp1lbfg532bgg" path="res://assets/characters/bugeisha/bugeisha_sprite.png" id="2_oxnm1"]
+[ext_resource type="Resource" uid="uid://c70h4tyeu4wsg" path="res://characters/players/bugeisha/bugeisha_starting_deck.tres" id="2_rtxy7"]
+
+[resource]
+script = ExtResource("1_lobjn")
+starting_deck = ExtResource("2_rtxy7")
+card_draw = 5
+max_action_points = 3
+max_health = 50
+sprite = ExtResource("2_oxnm1")

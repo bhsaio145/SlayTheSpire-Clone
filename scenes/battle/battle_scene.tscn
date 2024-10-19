@@ -1,17 +1,17 @@
-[gd_scene load_steps=9 format=3 uid="uid://byit6owstnc2k"]
+[gd_scene load_steps=11 format=3 uid="uid://byit6owstnc2k"]
 
+[ext_resource type="PackedScene" uid="uid://bl7jjy8vq3wyv" path="res://characters/enemies/enemy.tscn" id="1_8vfee"]
 [ext_resource type="PackedScene" uid="uid://bk6ewq2xdo3sp" path="res://resources/Card/card_ui.tscn" id="1_iyvs1"]
 [ext_resource type="Script" path="res://scenes/ui/hand.gd" id="1_jikge"]
 [ext_resource type="PackedScene" uid="uid://bp65ma8q53un1" path="res://resources/Card/Card Target Selector/card_target_selector.tscn" id="2_a82x8"]
+[ext_resource type="Resource" uid="uid://c5i4hfrpmjdxs" path="res://characters/enemies/slime_normal/slime_normal_stats.tres" id="2_fyw8g"]
 [ext_resource type="Resource" uid="uid://b77bkrmwhme57" path="res://characters/players/bugeisha/cards/bugeisha_slash.tres" id="3_mawjd"]
+[ext_resource type="Resource" uid="uid://dvea0gw2q4c25" path="res://characters/players/bugeisha/bugeisha_stats.tres" id="3_rdfl4"]
 [ext_resource type="Resource" uid="uid://do6gr00gv7vib" path="res://characters/players/bugeisha/cards/bugeisha_block.tres" id="4_w8ltb"]
-[ext_resource type="Texture2D" uid="uid://q771uvi1timh" path="res://assets/characters/slime_normal/slime_normal_sprite.png" id="5_vdn8j"]
+[ext_resource type="PackedScene" uid="uid://dcam5j1ka4ed8" path="res://characters/players/player.tscn" id="7_h0hew"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6qdbf"]
 size = Vector2(1360, 565)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtqh4"]
-size = Vector2(114, 70)
 
 [node name="battle scene" type="Node2D"]
 metadata/_edit_lock_ = true
@@ -30,16 +30,13 @@ position = Vector2(680, 282.5)
 shape = SubResource("RectangleShape2D_6qdbf")
 debug_color = Color(0, 0.6, 0.701961, 0.129412)
 
-[node name="enemy" type="Area2D" parent="."]
-collision_layer = 4
+[node name="enemy" parent="." instance=ExtResource("1_8vfee")]
+position = Vector2(1098, 364)
+stats = ExtResource("2_fyw8g")
 
-[node name="Sprite2D" type="Sprite2D" parent="enemy"]
-position = Vector2(1116, 357)
-texture = ExtResource("5_vdn8j")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy"]
-position = Vector2(1123, 359)
-shape = SubResource("RectangleShape2D_rtqh4")
+[node name="Player" parent="." instance=ExtResource("7_h0hew")]
+position = Vector2(291, 399)
+stats = ExtResource("3_rdfl4")
 
 [node name="CardTargetSelector" parent="." instance=ExtResource("2_a82x8")]
 

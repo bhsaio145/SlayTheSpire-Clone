@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CardPile" load_steps=4 format=3 uid="uid://c70h4tyeu4wsg"]
+
+[ext_resource type="Script" path="res://resources/Card/Card Pile/card_pile.gd" id="1_3tcrh"]
+[ext_resource type="Resource" uid="uid://b77bkrmwhme57" path="res://characters/players/bugeisha/cards/bugeisha_slash.tres" id="1_gbh0g"]
+[ext_resource type="Resource" uid="uid://do6gr00gv7vib" path="res://characters/players/bugeisha/cards/bugeisha_block.tres" id="2_ycdfb"]
+
+[resource]
+script = ExtResource("1_3tcrh")
+cards = Array[Resource("res://resources/Card/card.gd")]([ExtResource("1_gbh0g"), ExtResource("1_gbh0g"), ExtResource("1_gbh0g"), ExtResource("1_gbh0g"), ExtResource("2_ycdfb"), ExtResource("2_ycdfb"), ExtResource("2_ycdfb"), ExtResource("2_ycdfb")])

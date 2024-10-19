@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Stats" load_steps=3 format=3 uid="uid://c5i4hfrpmjdxs"]
+
+[ext_resource type="Script" path="res://resources/Stats/stats.gd" id="1_dwmlg"]
+[ext_resource type="Texture2D" uid="uid://q771uvi1timh" path="res://assets/characters/slime_normal/slime_normal_sprite.png" id="2_r8dp6"]
+
+[resource]
+script = ExtResource("1_dwmlg")
+max_health = 10
+sprite = ExtResource("2_r8dp6")

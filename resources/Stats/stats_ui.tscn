@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://5ungvd7phcvp"]
+
+[ext_resource type="Theme" uid="uid://cw3gs6oqrelur" path="res://default_theme.tres" id="1_whcp6"]
+[ext_resource type="Texture2D" uid="uid://c1p7wfiocuqm4" path="res://assets/skills/block.png" id="2_4l1a1"]
+[ext_resource type="Script" path="res://resources/Stats/stats_ui.gd" id="2_o82ea"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ifjbo"]
+bg_color = Color(0.542629, 0.0635949, 0.0890223, 1)
+
+[node name="StatsUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_whcp6")
+script = ExtResource("2_o82ea")
+
+[node name="Health" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 39.0
+offset_right = 79.0
+offset_bottom = 40.0
+
+[node name="HealthBar" type="ProgressBar" parent="Health"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 206.0
+offset_bottom = 40.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_ifjbo")
+value = 90.0
+show_percentage = false
+
+[node name="HealthLabel" type="Label" parent="Health"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 8.0
+offset_right = 131.0
+offset_bottom = 31.0
+text = "100/100"
+
+[node name="Block" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BlockIcon" type="TextureRect" parent="Block"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_4l1a1")
+expand_mode = 2
+
+[node name="BlockLabel" type="Label" parent="Block"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 26.0
+offset_right = 73.0
+offset_bottom = 49.0
+text = "10"

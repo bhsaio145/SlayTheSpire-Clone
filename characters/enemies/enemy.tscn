@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bl7jjy8vq3wyv"]
+
+[ext_resource type="Texture2D" uid="uid://q771uvi1timh" path="res://assets/characters/slime_normal/slime_normal_sprite.png" id="1_a3vcr"]
+[ext_resource type="Script" path="res://characters/enemies/enemy.gd" id="1_iw63f"]
+[ext_resource type="PackedScene" uid="uid://5ungvd7phcvp" path="res://resources/Stats/stats_ui.tscn" id="2_mas0f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtqh4"]
+size = Vector2(114, 70)
+
+[node name="enemy" type="Area2D" groups=["enemies"]]
+collision_layer = 4
+script = ExtResource("1_iw63f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_a3vcr")
+
+[node name="Targeted" type="ColorRect" parent="."]
+visible = false
+offset_left = -20.0
+offset_top = -75.0
+offset_right = 20.0
+offset_bottom = -35.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_rtqh4")
+
+[node name="StatsUI" parent="." instance=ExtResource("2_mas0f")]
+offset_left = -130.0
+offset_top = 36.0
+offset_right = -130.0
+offset_bottom = 36.0

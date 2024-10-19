@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcam5j1ka4ed8"]
+
+[ext_resource type="Texture2D" uid="uid://bp1lbfg532bgg" path="res://assets/characters/bugeisha/bugeisha_sprite.png" id="1_ffx56"]
+[ext_resource type="Script" path="res://characters/players/player.gd" id="1_s0xaq"]
+[ext_resource type="PackedScene" uid="uid://5ungvd7phcvp" path="res://resources/Stats/stats_ui.tscn" id="2_hmms3"]
+
+[node name="Player" type="Node2D" groups=["player"]]
+script = ExtResource("1_s0xaq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ffx56")
+flip_h = true
+
+[node name="StatsUI" parent="." instance=ExtResource("2_hmms3")]
+offset_left = -121.0
+offset_top = 104.0
+offset_right = -121.0
+offset_bottom = 104.0
