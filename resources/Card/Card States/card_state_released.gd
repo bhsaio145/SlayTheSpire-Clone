@@ -7,6 +7,7 @@ func enter() -> void:
 	
 	if not card_ui.targets.is_empty():
 		played = true
+		card_ui.play()
 
 func on_input(event: InputEvent) -> void:
 	if played:

@@ -1,9 +1,13 @@
-[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://do6gr00gv7vib"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://do6gr00gv7vib"]
 
-[ext_resource type="Script" path="res://resources/Card/card.gd" id="1_nch08"]
+[ext_resource type="Texture2D" uid="uid://c1p7wfiocuqm4" path="res://assets/skills/block.png" id="1_a5o4r"]
+[ext_resource type="Script" path="res://characters/players/bugeisha/cards/bugeisha_block.gd" id="2_h65go"]
 
 [resource]
-script = ExtResource("1_nch08")
+script = ExtResource("2_h65go")
 id = "bugeisha_block"
 type = 1
 target = 0
+cost = 1
+icon = ExtResource("1_a5o4r")
+description = ""

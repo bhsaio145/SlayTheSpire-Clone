@@ -1,7 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bk6ewq2xdo3sp"]
+[gd_scene load_steps=12 format=3 uid="uid://bk6ewq2xdo3sp"]
 
 [ext_resource type="Script" path="res://resources/Card/card_ui.gd" id="1_2gf8q"]
+[ext_resource type="Theme" uid="uid://cw3gs6oqrelur" path="res://default_theme.tres" id="1_whheh"]
 [ext_resource type="Script" path="res://resources/Card/Card States/card_state_machine.gd" id="2_83s5f"]
+[ext_resource type="StyleBox" uid="uid://bw0tqv6iahr42" path="res://resources/Card/Card States/card_base_stylebox.tres" id="3_evv2g"]
+[ext_resource type="Texture2D" uid="uid://c1p7wfiocuqm4" path="res://assets/skills/block.png" id="3_qfvjd"]
 [ext_resource type="Script" path="res://resources/Card/Card States/card_state_base.gd" id="3_y6ttq"]
 [ext_resource type="Script" path="res://resources/Card/Card States/card_state_clicked.gd" id="4_61gvc"]
 [ext_resource type="Script" path="res://resources/Card/Card States/card_state_dragging.gd" id="5_jfide"]
@@ -21,16 +24,55 @@ offset_right = -1235.0
 offset_bottom = -618.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_whheh")
 script = ExtResource("1_2gf8q")
 
-[node name="color" type="ColorRect" parent="."]
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = ExtResource("3_evv2g")
+
+[node name="Cost" type="Label" parent="."]
 layout_mode = 0
-offset_right = 125.0
-offset_bottom = 150.0
-mouse_filter = 2
-color = Color(0.467695, 0.187209, 0.162651, 1)
+offset_left = 7.0
+offset_right = 47.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 25
+text = "1"
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -33.5
+offset_top = 10.0
+offset_right = 33.5
+offset_bottom = 77.0
+grow_horizontal = 2
+texture = ExtResource("3_qfvjd")
+expand_mode = 1
+
+[node name="Description" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(115, 66)
+layout_mode = 0
+offset_left = 5.0
+offset_top = 79.0
+offset_right = 120.0
+offset_bottom = 145.0
+mouse_filter = 1
+bbcode_enabled = true
+text = "This is a [b]placeholder[/b] text"
+fit_content = true
+scroll_active = false
 
 [node name="DropDetector" type="Area2D" parent="."]
+collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DropDetector"]

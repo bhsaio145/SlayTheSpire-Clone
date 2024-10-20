@@ -1,9 +1,13 @@
-[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://b77bkrmwhme57"]
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b77bkrmwhme57"]
 
-[ext_resource type="Script" path="res://resources/Card/card.gd" id="1_bhp7k"]
+[ext_resource type="Texture2D" uid="uid://6hxcbgsld772" path="res://assets/skills/slash.png" id="1_njhjh"]
+[ext_resource type="Script" path="res://characters/players/bugeisha/cards/bugeisha_slash.gd" id="2_ayhqd"]
 
 [resource]
-script = ExtResource("1_bhp7k")
+script = ExtResource("2_ayhqd")
 id = "bugeisha_slash"
 type = 0
 target = 1
+cost = 1
+icon = ExtResource("1_njhjh")
+description = ""

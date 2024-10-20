@@ -1,7 +1,8 @@
+res://resources/Stats
+res://resources/Card/Card States
+res://assets/skills
 res://characters/enemies
 res://characters/players
-res://assets/skills
-res://resources/Stats
 res://characters/players/bugeisha
 res://characters/enemies/slime_normal
 res://resources/global
@@ -10,7 +11,6 @@ res://assets/characters/slime_normal
 res://characters/players/bugeisha/cards
 res://scenes/ui
 res://resources
-res://resources/Card/Card States
 res://resources/Card
 res://
 res://scenes/battle

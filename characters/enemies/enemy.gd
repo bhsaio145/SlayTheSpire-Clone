@@ -1,7 +1,7 @@
-class_name enemy
+class_name Enemy
 extends Area2D
 
-const TARGET_OFFSET := 5
+const TARGET_OFFSET := 20
 
 @export var stats: Stats: set = set_enemy_stats
 
@@ -23,7 +23,7 @@ func update_enemy() -> void:
 	if not is_inside_tree():
 		await ready
 	sprite2d.texture = stats.sprite
-	targeted.position = Vector2.UP * (sprite2d.get_rect().size.y / 2 + TARGET_OFFSET)
+	targeted.position.y = -(sprite2d.get_rect().size.y / 2 + TARGET_OFFSET)
 	stats_ui.setup_stats(stats)
 	update_stats()
 
@@ -36,3 +36,9 @@ func take_damage(damage: int) -> void:
 	stats.take_damage(damage)
 	if stats.health <= 0:
 		queue_free()
+
+func _on_area_entered(_area: Area2D) -> void:
+	targeted.show()
+
+func _on_area_exited(_area: Area2D) -> void:
+	targeted.hide()
