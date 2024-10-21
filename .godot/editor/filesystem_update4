@@ -6,18 +6,6 @@ res://resources/Card/card_ui.tscn
 res://resources/Stats/stats_ui.tscn
 res://characters/players/player.tscn
 res://characters/enemies/enemy.tscn
-res://characters/enemies/enemy.gd
-res://resources/Card/card.gd
-res://resources/Card/card_ui.gd
-res://resources/Card/Card States/card_state_base.gd
 res://resources/Stats/action_point_ui.tscn
-res://resources/Stats/action_point_ui.gd
-res://resources/Effects/effect.gd
-res://resources/Effects/block_effect.gd
-res://resources/Effects/damage_effect.gd
-res://resources/global/events.gd
-res://characters/players/bugeisha/cards/bugeisha_slash.gd
-res://characters/players/bugeisha/cards/bugeisha_block.gd
-res://resources/Card/Card States/card_state_released.gd
-res://resources/Card/Card States/card_state_dragging.gd
 res://scenes/ui/hand.gd
+res://resources/Card/Card States/card_state_base.gd

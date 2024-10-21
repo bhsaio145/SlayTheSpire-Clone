@@ -4,7 +4,7 @@ extends HBoxContainer
 var cards_played_this_turn := 0
 
 func _ready():
-	Events.cards_played.connect(_on_card_played)
+	Events.card_played.connect(_on_card_played)
 	
 	for child in get_children():
 		var card_ui := child as CardUI
