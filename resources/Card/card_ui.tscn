@@ -12,16 +12,16 @@
 [ext_resource type="Script" path="res://resources/Card/Card States/card_state_released.gd" id="7_fax07"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b1sqa"]
-size = Vector2(125, 150)
+size = Vector2(125, 175)
 
 [node name="Card UI" type="Control"]
-custom_minimum_size = Vector2(125, 150)
+custom_minimum_size = Vector2(125, 175)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = -1235.0
-offset_bottom = -618.0
+offset_bottom = -593.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_whheh")
@@ -58,13 +58,19 @@ grow_horizontal = 2
 texture = ExtResource("3_qfvjd")
 expand_mode = 1
 
-[node name="Description" type="RichTextLabel" parent="."]
-custom_minimum_size = Vector2(115, 66)
+[node name="Description Margin" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 79.0
-offset_right = 120.0
-offset_bottom = 145.0
+offset_top = 78.0
+offset_right = 125.0
+offset_bottom = 175.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Description" type="RichTextLabel" parent="Description Margin"]
+custom_minimum_size = Vector2(115, 66)
+layout_mode = 2
 mouse_filter = 1
 bbcode_enabled = true
 text = "This is a [b]placeholder[/b] text"
@@ -76,7 +82,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DropDetector"]
-position = Vector2(62.5, 75)
+position = Vector2(62.5, 87.5)
 shape = SubResource("RectangleShape2D_b1sqa")
 
 [node name="CardStateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]

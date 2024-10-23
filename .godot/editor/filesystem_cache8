@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729537649
+::res://::1729639632
 default_theme.tres::Theme::6375196601384446613::1729039420::0::1::::<><>::uid://7anolq42yehg::::res://assets/fonts/vinque rg.otf
 icon.svg::CompressedTexture2D::2902665713457868656::1729038194::1729038212::1::::<><>::
 README.md::TextFile::-1::1729142512::0::1::::<><>::
@@ -18,35 +18,35 @@ vinque rg.otf::FontFile::2246857922266047636::1570991608::1729039358::1::::<><>:
 block.png::CompressedTexture2D::6630699475135134965::1309710756::1729300812::1::::<><>::
 slash.png::CompressedTexture2D::2191704922103730787::1309710746::1729451605::1::::<><>::
 ::res://characters/::1729210730
-::res://characters/enemies/::1729462295
+::res://characters/enemies/::1729563224
 enemy.gd::GDScript::-1::1729457068::0::1::::Enemy<>Area2D<>::
-enemy.tscn::PackedScene::3225121889437013597::1729462295::0::1::::<><>::uid://q771uvi1timh::::res://assets/characters/slime_normal/slime_normal_sprite.png<>res://characters/enemies/enemy.gd<>uid://5ungvd7phcvp::::res://resources/Stats/stats_ui.tscn
+enemy.tscn::PackedScene::3225121889437013597::1729563224::0::1::::<><>::uid://q771uvi1timh::::res://assets/characters/slime_normal/slime_normal_sprite.png<>res://characters/enemies/enemy.gd<>uid://5ungvd7phcvp::::res://resources/Stats/stats_ui.tscn
 ::res://characters/enemies/slime_normal/::1729299529
 slime_normal_stats.tres::Resource/Resource::6896795281483564756::1729299529::0::1::::<><>::res://resources/Stats/stats.gd<>uid://q771uvi1timh::::res://assets/characters/slime_normal/slime_normal_sprite.png
-::res://characters/players/::1729462294
+::res://characters/players/::1729563224
 player.gd::GDScript::-1::1729302538::0::1::::Player<>Node2D<>::
-player.tscn::PackedScene::7300422429416277311::1729462294::0::1::::<><>::uid://bp1lbfg532bgg::::res://assets/characters/bugeisha/bugeisha_sprite.png<>res://characters/players/player.gd<>uid://5ungvd7phcvp::::res://resources/Stats/stats_ui.tscn
-::res://characters/players/bugeisha/::1729449681
-bugeisha_starting_deck.tres::Resource/CardPile::7070971649855933034::1729449681::0::1::::<><>::res://resources/Card/Card Pile/card_pile.gd<>uid://b77bkrmwhme57::::res://characters/players/bugeisha/cards/bugeisha_slash.tres<>uid://do6gr00gv7vib::::res://characters/players/bugeisha/cards/bugeisha_block.tres
+player.tscn::PackedScene::7300422429416277311::1729563224::0::1::::<><>::uid://bp1lbfg532bgg::::res://assets/characters/bugeisha/bugeisha_sprite.png<>res://characters/players/player.gd<>uid://5ungvd7phcvp::::res://resources/Stats/stats_ui.tscn
+::res://characters/players/bugeisha/::1729562567
+bugeisha_starting_deck.tres::Resource/CardPile::7070971649855933034::1729562567::0::1::::<><>::res://resources/Card/Card Pile/card_pile.gd<>uid://b77bkrmwhme57::::res://characters/players/bugeisha/cards/bugeisha_slash.tres<>uid://do6gr00gv7vib::::res://characters/players/bugeisha/cards/bugeisha_block.tres
 bugeisha_stats.tres::Resource/Resource::8641530273716923652::1729300458::0::1::::<><>::res://resources/Stats/player_stats.gd<>uid://bp1lbfg532bgg::::res://assets/characters/bugeisha/bugeisha_sprite.png<>uid://c70h4tyeu4wsg::::res://characters/players/bugeisha/bugeisha_starting_deck.tres
-::res://characters/players/bugeisha/cards/::1729458143
+::res://characters/players/bugeisha/cards/::1729563028
 bugeisha_block.gd::GDScript::-1::1729458003::0::1::::<>Card<>::
-bugeisha_block.tres::Resource::8206297584846413493::1729458143::0::1::::<><>::uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://characters/players/bugeisha/cards/bugeisha_block.gd
+bugeisha_block.tres::Resource::8206297584846413493::1729562643::0::1::::<><>::uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://characters/players/bugeisha/cards/bugeisha_block.gd
 bugeisha_slash.gd::GDScript::-1::1729457948::0::1::::<>Card<>::
-bugeisha_slash.tres::Resource::4698603255615882044::1729458143::0::1::::<><>::uid://6hxcbgsld772::::res://assets/skills/slash.png<>res://characters/players/bugeisha/cards/bugeisha_slash.gd
+bugeisha_slash.tres::Resource::4698603255615882044::1729563028::0::1::::<><>::uid://6hxcbgsld772::::res://assets/skills/slash.png<>res://characters/players/bugeisha/cards/bugeisha_slash.gd
 ::res://resources/::1729456795
-::res://resources/Card/::1729462507
+::res://resources/Card/::1729563224
 card.gd::GDScript::-1::1729461521::0::1::::Card<>Resource<>::
-card_ui.gd::GDScript::-1::1729462507::0::1::::CardUI<>Control<>::
-card_ui.tscn::PackedScene::3152587869019180067::1729462294::0::1::::<><>::res://resources/Card/card_ui.gd<>uid://cw3gs6oqrelur::::res://default_theme.tres<>res://resources/Card/Card States/card_state_machine.gd<>uid://bw0tqv6iahr42::::res://resources/Card/Card States/card_base_stylebox.tres<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://resources/Card/Card States/card_state_base.gd<>res://resources/Card/Card States/card_state_clicked.gd<>res://resources/Card/Card States/card_state_dragging.gd<>res://resources/Card/Card States/card_state_aiming.gd<>res://resources/Card/Card States/card_state_released.gd
+card_ui.gd::GDScript::-1::1729563223::0::1::::CardUI<>Control<>::
+card_ui.tscn::PackedScene::3152587869019180067::1729563224::0::1::::<><>::res://resources/Card/card_ui.gd<>uid://cw3gs6oqrelur::::res://default_theme.tres<>res://resources/Card/Card States/card_state_machine.gd<>uid://bw0tqv6iahr42::::res://resources/Card/Card States/card_base_stylebox.tres<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://resources/Card/Card States/card_state_base.gd<>res://resources/Card/Card States/card_state_clicked.gd<>res://resources/Card/Card States/card_state_dragging.gd<>res://resources/Card/Card States/card_state_aiming.gd<>res://resources/Card/Card States/card_state_released.gd
 ::res://resources/Card/Card Pile/::1729297170
 card_pile.gd::GDScript::-1::1729297170::0::1::::CardPile<>Resource<>::
-::res://resources/Card/Card States/::1729462293
+::res://resources/Card/Card States/::1729540440
 card_base_stylebox.tres::StyleBoxFlat::3983368034389418161::1729455130::0::1::::<><>::
 card_hover_stylebox.tres::StyleBoxFlat::4585644858015321057::1729455233::0::1::::<><>::
 card_states.gd::GDScript::-1::1729048518::0::1::::CardStates<>Node<>::
 card_state_aiming.gd::GDScript::-1::1729213996::0::1::::<>CardStates<>::
-card_state_base.gd::GDScript::-1::1729459925::0::1::::<>CardStates<>::
+card_state_base.gd::GDScript::-1::1729540440::0::1::::<>CardStates<>::
 card_state_clicked.gd::GDScript::-1::1729047839::0::1::::<>CardStates<>::
 card_state_dragging.gd::GDScript::-1::1729462293::0::1::::<>CardStates<>::
 card_state_machine.gd::GDScript::-1::1729045529::0::1::::CardStateMachine<>Node<>::
@@ -61,19 +61,19 @@ damage_effect.gd::GDScript::-1::1729457196::0::1::::DamageEffect<>Effect<>::
 effect.gd::GDScript::-1::1729456862::0::1::::Effect<>RefCounted<>::
 ::res://resources/global/::1729459128
 events.gd::GDScript::-1::1729459128::0::1::::<>Node<>::
-::res://resources/Stats/::1729462295
+::res://resources/Stats/::1729563224
 action_point_ui.gd::GDScript::-1::1729461293::0::1::::ActionPointUI<>Panel<>::
-action_point_ui.tscn::PackedScene::3019229850173166428::1729462295::0::1::::<><>::uid://cw3gs6oqrelur::::res://default_theme.tres<>res://resources/Stats/action_point_ui.gd
+action_point_ui.tscn::PackedScene::3019229850173166428::1729563224::0::1::::<><>::uid://cw3gs6oqrelur::::res://default_theme.tres<>res://resources/Stats/action_point_ui.gd
 player_stats.gd::GDScript::-1::1729299906::0::1::::PlayerStats<>Stats<>::
 stats.gd::GDScript::-1::1729298539::0::1::::Stats<>Resource<>::
 stats_ui.gd::GDScript::-1::1729301935::0::1::::StatsUI<>Control<>::
-stats_ui.tscn::PackedScene::2147754008990583497::1729462294::0::1::::<><>::uid://cw3gs6oqrelur::::res://default_theme.tres<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://resources/Stats/stats_ui.gd
+stats_ui.tscn::PackedScene::2147754008990583497::1729563224::0::1::::<><>::uid://cw3gs6oqrelur::::res://default_theme.tres<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://resources/Stats/stats_ui.gd
 ::res://scenes/::1729048785
-::res://scenes/battle/::1729462294
-battle_scene.tscn::PackedScene::4088677705668312448::1729462294::0::1::::<><>::uid://bl7jjy8vq3wyv::::res://characters/enemies/enemy.tscn<>uid://bk6ewq2xdo3sp::::res://resources/Card/card_ui.tscn<>res://scenes/ui/hand.gd<>uid://y5prlxxlskbo::::res://assets/background/Battleground1.png<>uid://bp65ma8q53un1::::res://resources/Card/Card Target Selector/card_target_selector.tscn<>uid://c5i4hfrpmjdxs::::res://characters/enemies/slime_normal/slime_normal_stats.tres<>uid://b77bkrmwhme57::::res://characters/players/bugeisha/cards/bugeisha_slash.tres<>uid://dvea0gw2q4c25::::res://characters/players/bugeisha/bugeisha_stats.tres<>uid://do6gr00gv7vib::::res://characters/players/bugeisha/cards/bugeisha_block.tres<>uid://dcam5j1ka4ed8::::res://characters/players/player.tscn<>uid://bjasjllvohe33::::res://resources/Stats/action_point_ui.tscn
+::res://scenes/battle/::1729563223
+battle_scene.tscn::PackedScene::4088677705668312448::1729563223::0::1::::<><>::uid://bl7jjy8vq3wyv::::res://characters/enemies/enemy.tscn<>uid://bk6ewq2xdo3sp::::res://resources/Card/card_ui.tscn<>res://scenes/ui/hand.gd<>uid://y5prlxxlskbo::::res://assets/background/Battleground1.png<>uid://bp65ma8q53un1::::res://resources/Card/Card Target Selector/card_target_selector.tscn<>uid://c5i4hfrpmjdxs::::res://characters/enemies/slime_normal/slime_normal_stats.tres<>uid://b77bkrmwhme57::::res://characters/players/bugeisha/cards/bugeisha_slash.tres<>uid://dvea0gw2q4c25::::res://characters/players/bugeisha/bugeisha_stats.tres<>uid://do6gr00gv7vib::::res://characters/players/bugeisha/cards/bugeisha_block.tres<>uid://dcam5j1ka4ed8::::res://characters/players/player.tscn<>uid://bjasjllvohe33::::res://resources/Stats/action_point_ui.tscn
 ::res://scenes/character selection/::1729038530
 ::res://scenes/event/::1729038535
 ::res://scenes/main menu/::1729038524
 ::res://scenes/shop/::1729038521
-::res://scenes/ui/::1729462507
-hand.gd::GDScript::-1::1729462507::0::1::::Hand<>HBoxContainer<>::
+::res://scenes/ui/::1729537719
+hand.gd::GDScript::-1::1729537719::0::1::::Hand<>HBoxContainer<>::

@@ -1,3 +1,6 @@
+Button
+Node
+MarginContainer
 Label
 Panel
 RichTextLabel
@@ -10,5 +13,3 @@ Control
 CanvasLayer
 Line2D
 CollisionShape2D
-Area2D
-Node

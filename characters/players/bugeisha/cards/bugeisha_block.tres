@@ -10,4 +10,4 @@ type = 1
 target = 0
 cost = 1
 icon = ExtResource("1_a5o4r")
-description = ""
+description = "[center]Gain [color=blue]5[/color] Block [/center]"

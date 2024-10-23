@@ -12,7 +12,7 @@ const HOVER_STYLEBOX := preload("res://resources/Card/Card States/card_hover_sty
 @onready var panel = $Panel
 @onready var cost = $Cost
 @onready var icon = $Icon
-@onready var description = $Description
+@onready var description = $"Description Margin/Description"
 @onready var drop_detector = $DropDetector
 @onready var cardStateMachineNode: CardStateMachine = $CardStateMachine as CardStateMachine
 @onready var targets: Array[Node] = []
@@ -42,16 +42,18 @@ func _set_card(value: Card) -> void:
 	card = value
 	cost.text = str(card.cost)
 	icon.texture = card.icon
-	description = str(card.description)
+	description.text = card.description
 
 func _set_playable(value: bool) -> void:
 	playable = value
 	if not playable:
 		cost.add_theme_color_override("font_color", Color.RED)
 		icon.modulate = Color(1,1,1,0.5)
+		description.modulate = Color(1,1,1,0.5)
 	else:
 		cost.remove_theme_color_override("font_color")
 		icon.modulate = Color(1,1,1,1)
+		description.modulate = Color(1,1,1,1)
 
 func _set_player_stats(value: PlayerStats) -> void:
 	player_stats = value

@@ -1,21 +1,24 @@
-[gd_scene load_steps=13 format=3 uid="uid://byit6owstnc2k"]
+[gd_scene load_steps=14 format=3 uid="uid://byit6owstnc2k"]
 
+[ext_resource type="Script" path="res://scenes/battle/battle_scene.gd" id="1_5xdsv"]
 [ext_resource type="PackedScene" uid="uid://bl7jjy8vq3wyv" path="res://characters/enemies/enemy.tscn" id="1_8vfee"]
-[ext_resource type="PackedScene" uid="uid://bk6ewq2xdo3sp" path="res://resources/Card/card_ui.tscn" id="1_iyvs1"]
 [ext_resource type="Script" path="res://scenes/ui/hand.gd" id="1_jikge"]
 [ext_resource type="Texture2D" uid="uid://y5prlxxlskbo" path="res://assets/background/Battleground1.png" id="1_u23bk"]
 [ext_resource type="PackedScene" uid="uid://bp65ma8q53un1" path="res://resources/Card/Card Target Selector/card_target_selector.tscn" id="2_a82x8"]
 [ext_resource type="Resource" uid="uid://c5i4hfrpmjdxs" path="res://characters/enemies/slime_normal/slime_normal_stats.tres" id="2_fyw8g"]
-[ext_resource type="Resource" uid="uid://b77bkrmwhme57" path="res://characters/players/bugeisha/cards/bugeisha_slash.tres" id="3_mawjd"]
 [ext_resource type="Resource" uid="uid://dvea0gw2q4c25" path="res://characters/players/bugeisha/bugeisha_stats.tres" id="3_rdfl4"]
-[ext_resource type="Resource" uid="uid://do6gr00gv7vib" path="res://characters/players/bugeisha/cards/bugeisha_block.tres" id="4_w8ltb"]
+[ext_resource type="Script" path="res://scenes/battle/BattleUI.gd" id="7_8r7w7"]
 [ext_resource type="PackedScene" uid="uid://dcam5j1ka4ed8" path="res://characters/players/player.tscn" id="7_h0hew"]
+[ext_resource type="Script" path="res://characters/players/PlayerHandler.gd" id="8_ud1dj"]
 [ext_resource type="PackedScene" uid="uid://bjasjllvohe33" path="res://resources/Stats/action_point_ui.tscn" id="11_k3rjv"]
+[ext_resource type="Theme" uid="uid://cw3gs6oqrelur" path="res://default_theme.tres" id="12_i3dck"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6qdbf"]
 size = Vector2(1360, 565)
 
 [node name="battle scene" type="Node2D"]
+script = ExtResource("1_5xdsv")
+player_stats = ExtResource("3_rdfl4")
 metadata/_edit_lock_ = true
 
 [node name="background" type="Sprite2D" parent="."]
@@ -42,9 +45,14 @@ stats = ExtResource("3_rdfl4")
 
 [node name="CardTargetSelector" parent="." instance=ExtResource("2_a82x8")]
 
-[node name="battle UI" type="CanvasLayer" parent="." groups=["ui_layer"]]
+[node name="PlayerHandler" type="Node" parent="." node_paths=PackedStringArray("hand")]
+script = ExtResource("8_ud1dj")
+hand = NodePath("../BattleUI/Hand")
 
-[node name="Hand" type="HBoxContainer" parent="battle UI"]
+[node name="BattleUI" type="CanvasLayer" parent="." groups=["ui_layer"]]
+script = ExtResource("7_8r7w7")
+
+[node name="Hand" type="HBoxContainer" parent="BattleUI"]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -59,20 +67,22 @@ grow_vertical = 0
 alignment = 1
 script = ExtResource("1_jikge")
 
-[node name="Card UI" parent="battle UI/Hand" instance=ExtResource("1_iyvs1")]
-layout_mode = 2
-card = ExtResource("3_mawjd")
+[node name="ActionPointUI" parent="BattleUI" instance=ExtResource("11_k3rjv")]
 player_stats = ExtResource("3_rdfl4")
 
-[node name="Card UI2" parent="battle UI/Hand" instance=ExtResource("1_iyvs1")]
-layout_mode = 2
-card = ExtResource("3_mawjd")
-player_stats = ExtResource("3_rdfl4")
-
-[node name="Card UI3" parent="battle UI/Hand" instance=ExtResource("1_iyvs1")]
-layout_mode = 2
-card = ExtResource("4_w8ltb")
-player_stats = ExtResource("3_rdfl4")
-
-[node name="ActionPointUI" parent="." instance=ExtResource("11_k3rjv")]
-player_stats = ExtResource("3_rdfl4")
+[node name="EndTurnButton" type="Button" parent="BattleUI"]
+unique_name_in_owner = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -180.0
+offset_right = -42.0
+offset_bottom = -138.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("12_i3dck")
+disabled = true
+text = "End Turn"

@@ -7,5 +7,14 @@ res://resources/Stats/stats_ui.tscn
 res://characters/players/player.tscn
 res://characters/enemies/enemy.tscn
 res://resources/Stats/action_point_ui.tscn
+res://resources/Card/Card States/card_base_stylebox.tres
+res://resources/Card/Card States/card_hover_stylebox.tres
+res://resources/Card/card_ui.gd
+res://scenes/battle/BattleUI.gd
+res://scenes/battle/battle_scene.gd
+res://resources/Stats/action_point_ui.gd
 res://scenes/ui/hand.gd
-res://resources/Card/Card States/card_state_base.gd
+res://resources/global/events.gd
+res://characters/players/PlayerHandler.gd
+res://resources/Card/Card States/card_states.gd
+res://characters/players/player.gd
