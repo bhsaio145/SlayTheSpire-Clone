@@ -23,11 +23,11 @@ func on_mouse_entered() -> void:
 		return
 	card_ui.panel.set("theme_override_styles/panel", card_ui.HOVER_STYLEBOX)
 	
-	card_ui.global_position.y -= 62
+	card_ui.position.y -= 62
 	
 func on_mouse_exited() -> void:
 	if not card_ui.playable or card_ui.disabled:
 		return
 	card_ui.panel.set("theme_override_styles/panel", card_ui.BASE_STYLEBOX)
-
-	card_ui.global_position.y += 62
+	
+	card_ui.position.y = 0
