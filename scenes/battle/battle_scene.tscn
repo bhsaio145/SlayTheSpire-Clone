@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://byit6owstnc2k"]
+[gd_scene load_steps=15 format=3 uid="uid://byit6owstnc2k"]
 
 [ext_resource type="Script" path="res://scenes/battle/battle_scene.gd" id="1_5xdsv"]
 [ext_resource type="PackedScene" uid="uid://bl7jjy8vq3wyv" path="res://characters/enemies/enemy.tscn" id="1_8vfee"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://y5prlxxlskbo" path="res://assets/background/Battleground1.png" id="1_u23bk"]
 [ext_resource type="PackedScene" uid="uid://bp65ma8q53un1" path="res://resources/Card/Card Target Selector/card_target_selector.tscn" id="2_a82x8"]
 [ext_resource type="Resource" uid="uid://dvea0gw2q4c25" path="res://characters/players/bugeisha/bugeisha_stats.tres" id="3_rdfl4"]
+[ext_resource type="Script" path="res://characters/enemies/enemy_handler.gd" id="4_8vmf0"]
 [ext_resource type="Resource" uid="uid://bo051r0qeydp0" path="res://characters/enemies/slime_normal/slime_normal.tres" id="5_msdl2"]
 [ext_resource type="Script" path="res://scenes/battle/BattleUI.gd" id="7_8r7w7"]
 [ext_resource type="PackedScene" uid="uid://dcam5j1ka4ed8" path="res://characters/players/player.tscn" id="7_h0hew"]
@@ -35,7 +36,10 @@ position = Vector2(680, 282.5)
 shape = SubResource("RectangleShape2D_6qdbf")
 debug_color = Color(0, 0.6, 0.701961, 0.129412)
 
-[node name="enemy" parent="." instance=ExtResource("1_8vfee")]
+[node name="EnemyHandler" type="Node2D" parent="."]
+script = ExtResource("4_8vmf0")
+
+[node name="enemy" parent="EnemyHandler" instance=ExtResource("1_8vfee")]
 position = Vector2(931, 467)
 stats = ExtResource("5_msdl2")
 

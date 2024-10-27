@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxhfkyildi2jm"]
+
+[ext_resource type="Script" path="res://characters/enemies/enemy_action_picker.gd" id="1_uxagg"]
+[ext_resource type="Script" path="res://characters/enemies/slime_normal/slime_normal_attack.gd" id="2_ds63m"]
+[ext_resource type="Script" path="res://characters/enemies/slime_normal/slime_normal_block.gd" id="3_jw6x4"]
+[ext_resource type="Script" path="res://characters/enemies/slime_normal/slime_normal_strong_block.gd" id="4_u7e67"]
+
+[node name="Slime Normal AI" type="Node"]
+script = ExtResource("1_uxagg")
+
+[node name="Attack" type="Node" parent="."]
+script = ExtResource("2_ds63m")
+type = 1
+chance_weight = 1.0
+
+[node name="Block" type="Node" parent="."]
+script = ExtResource("3_jw6x4")
+type = 1
+chance_weight = 1.0
+
+[node name="StrongBlock" type="Node" parent="."]
+script = ExtResource("4_u7e67")

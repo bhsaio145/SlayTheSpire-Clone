@@ -1,5 +1,6 @@
-Button
+Node2D
 Node
+Button
 MarginContainer
 Label
 Panel
@@ -12,4 +13,3 @@ TextureProgressBar
 Control
 CanvasLayer
 Line2D
-CollisionShape2D
