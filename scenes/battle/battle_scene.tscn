@@ -5,8 +5,8 @@
 [ext_resource type="Script" path="res://scenes/ui/hand.gd" id="1_jikge"]
 [ext_resource type="Texture2D" uid="uid://y5prlxxlskbo" path="res://assets/background/Battleground1.png" id="1_u23bk"]
 [ext_resource type="PackedScene" uid="uid://bp65ma8q53un1" path="res://resources/Card/Card Target Selector/card_target_selector.tscn" id="2_a82x8"]
-[ext_resource type="Resource" uid="uid://c5i4hfrpmjdxs" path="res://characters/enemies/slime_normal/slime_normal_stats.tres" id="2_fyw8g"]
 [ext_resource type="Resource" uid="uid://dvea0gw2q4c25" path="res://characters/players/bugeisha/bugeisha_stats.tres" id="3_rdfl4"]
+[ext_resource type="Resource" uid="uid://bo051r0qeydp0" path="res://characters/enemies/slime_normal/slime_normal.tres" id="5_msdl2"]
 [ext_resource type="Script" path="res://scenes/battle/BattleUI.gd" id="7_8r7w7"]
 [ext_resource type="PackedScene" uid="uid://dcam5j1ka4ed8" path="res://characters/players/player.tscn" id="7_h0hew"]
 [ext_resource type="Script" path="res://characters/players/PlayerHandler.gd" id="8_ud1dj"]
@@ -37,7 +37,7 @@ debug_color = Color(0, 0.6, 0.701961, 0.129412)
 
 [node name="enemy" parent="." instance=ExtResource("1_8vfee")]
 position = Vector2(931, 467)
-stats = ExtResource("2_fyw8g")
+stats = ExtResource("5_msdl2")
 
 [node name="Player" parent="." instance=ExtResource("7_h0hew")]
 position = Vector2(291, 399)

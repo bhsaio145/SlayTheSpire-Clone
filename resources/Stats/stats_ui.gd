@@ -9,7 +9,7 @@ extends Control
 
 func setup_stats(stats: Stats) -> void:
 	health_bar.max_value = stats.max_health
-	health_bar.min_value = stats.max_health
+	health_bar.value = stats.max_health
 
 func update_stats(stats: Stats) -> void:
 	block_label.text = str(stats.block)

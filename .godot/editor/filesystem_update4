@@ -2,9 +2,11 @@ res://scenes/battle/battle_scene.tscn
 res://characters/players/bugeisha/cards/bugeisha_slash.tres
 res://characters/players/bugeisha/cards/bugeisha_block.tres
 res://characters/players/bugeisha/bugeisha_starting_deck.tres
+res://resources/Stats/enemy_stats.gd
+res://characters/enemies/enemy.tscn
+res://characters/enemies/slime_normal/slime_normal.tres
 res://resources/Card/card_ui.tscn
 res://resources/Stats/stats_ui.tscn
 res://characters/players/player.tscn
-res://characters/enemies/enemy.tscn
 res://resources/Stats/action_point_ui.tscn
-res://resources/Card/Card States/card_state_base.gd
+res://resources/Stats/stats_ui.gd
