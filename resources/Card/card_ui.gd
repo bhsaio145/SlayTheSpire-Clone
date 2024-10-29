@@ -16,9 +16,8 @@ const HOVER_STYLEBOX := preload("res://resources/Card/Card States/card_hover_sty
 @onready var drop_detector = $DropDetector
 @onready var cardStateMachineNode: CardStateMachine = $CardStateMachine as CardStateMachine
 @onready var targets: Array[Node] = []
-@onready var original_index := self.get_index()
 
-
+var original_index := 0
 var parent: Control
 var tween: Tween
 var playable := true : set = _set_playable
