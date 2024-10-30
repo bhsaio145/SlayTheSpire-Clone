@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/battle/battle_scene.gd" id="1_5xdsv"]
 [ext_resource type="PackedScene" uid="uid://bl7jjy8vq3wyv" path="res://characters/enemies/enemy.tscn" id="1_8vfee"]
-[ext_resource type="Script" path="res://scenes/ui/hand.gd" id="1_jikge"]
+[ext_resource type="Script" path="res://scenes/battle/hand.gd" id="1_jikge"]
 [ext_resource type="Texture2D" uid="uid://y5prlxxlskbo" path="res://assets/background/Battleground1.png" id="1_u23bk"]
 [ext_resource type="PackedScene" uid="uid://bp65ma8q53un1" path="res://resources/Card/Card Target Selector/card_target_selector.tscn" id="2_a82x8"]
 [ext_resource type="Resource" uid="uid://dvea0gw2q4c25" path="res://characters/players/bugeisha/bugeisha_stats.tres" id="3_rdfl4"]

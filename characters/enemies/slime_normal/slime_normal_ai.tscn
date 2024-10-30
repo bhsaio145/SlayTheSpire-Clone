@@ -1,22 +1,43 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxhfkyildi2jm"]
+[gd_scene load_steps=11 format=3 uid="uid://bxhfkyildi2jm"]
 
 [ext_resource type="Script" path="res://characters/enemies/enemy_action_picker.gd" id="1_uxagg"]
 [ext_resource type="Script" path="res://characters/enemies/slime_normal/slime_normal_attack.gd" id="2_ds63m"]
 [ext_resource type="Script" path="res://characters/enemies/slime_normal/slime_normal_block.gd" id="3_jw6x4"]
+[ext_resource type="Texture2D" uid="uid://6hxcbgsld772" path="res://assets/skills/slash.png" id="3_tct33"]
+[ext_resource type="Script" path="res://resources/Intent/intent.gd" id="4_0xrhm"]
 [ext_resource type="Script" path="res://characters/enemies/slime_normal/slime_normal_strong_block.gd" id="4_u7e67"]
+[ext_resource type="Texture2D" uid="uid://c1p7wfiocuqm4" path="res://assets/skills/block.png" id="6_jw5uf"]
+
+[sub_resource type="Resource" id="Resource_04f87"]
+script = ExtResource("4_0xrhm")
+number = "7"
+icon = ExtResource("3_tct33")
+
+[sub_resource type="Resource" id="Resource_i1sv3"]
+script = ExtResource("4_0xrhm")
+number = ""
+icon = ExtResource("6_jw5uf")
+
+[sub_resource type="Resource" id="Resource_2gmh8"]
+script = ExtResource("4_0xrhm")
+number = ""
+icon = ExtResource("6_jw5uf")
 
 [node name="Slime Normal AI" type="Node"]
 script = ExtResource("1_uxagg")
 
 [node name="Attack" type="Node" parent="."]
 script = ExtResource("2_ds63m")
+intent = SubResource("Resource_04f87")
 type = 1
 chance_weight = 1.0
 
 [node name="Block" type="Node" parent="."]
 script = ExtResource("3_jw6x4")
+intent = SubResource("Resource_i1sv3")
 type = 1
 chance_weight = 1.0
 
 [node name="StrongBlock" type="Node" parent="."]
 script = ExtResource("4_u7e67")
+intent = SubResource("Resource_2gmh8")

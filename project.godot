@@ -25,6 +25,10 @@ window/size/viewport_width=1360
 window/size/viewport_height=768
 window/stretch/mode="viewport"
 
+[gui]
+
+theme/custom="res://default_theme.tres"
+
 [input]
 
 left_mouse={

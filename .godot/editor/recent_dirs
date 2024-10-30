@@ -1,3 +1,5 @@
+res://
+res://resources/Intent
 res://characters/enemies
 res://characters/enemies/slime_normal
 res://characters/players
@@ -9,8 +11,6 @@ res://resources/global
 res://resources/Card/Card Target Selector
 res://assets/characters/slime_normal
 res://characters/players/bugeisha/cards
-res://scenes/ui
 res://resources
 res://resources/Card
-res://
 res://scenes/battle
