@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q771uvi1timh"
-path="res://.godot/imported/slime_normal_sprite.png-f329e591e847360f9ce00ccbabd46821.ctex"
+uid="uid://86wdmpsmfrln"
+path="res://.godot/imported/slime_defender_sprite.png-e5426a16e01ffa10b333e477a639356a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/slime_normal/slime_normal_sprite.png"
-dest_files=["res://.godot/imported/slime_normal_sprite.png-f329e591e847360f9ce00ccbabd46821.ctex"]
+source_file="res://assets/characters/slimes/slime_defender_sprite.png"
+dest_files=["res://.godot/imported/slime_defender_sprite.png-e5426a16e01ffa10b333e477a639356a.ctex"]
 
 [params]
 

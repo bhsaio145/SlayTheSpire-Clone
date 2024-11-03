@@ -1,7 +1,8 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://do6gr00gv7vib"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://do6gr00gv7vib"]
 
 [ext_resource type="Texture2D" uid="uid://c1p7wfiocuqm4" path="res://assets/skills/block.png" id="1_a5o4r"]
 [ext_resource type="Script" path="res://characters/players/bugeisha/cards/bugeisha_block.gd" id="2_h65go"]
+[ext_resource type="AudioStream" uid="uid://b5d2h0636mrol" path="res://assets/sfx/Block Up.wav" id="3_crnc8"]
 
 [resource]
 script = ExtResource("2_h65go")
@@ -11,3 +12,4 @@ target = 0
 cost = 1
 icon = ExtResource("1_a5o4r")
 description = "[center]Gain [color=blue]5[/color] Block [/center]"
+sound = ExtResource("3_crnc8")

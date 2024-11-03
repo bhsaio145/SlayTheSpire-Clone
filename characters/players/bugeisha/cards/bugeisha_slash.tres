@@ -1,7 +1,8 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://b77bkrmwhme57"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://b77bkrmwhme57"]
 
 [ext_resource type="Texture2D" uid="uid://6hxcbgsld772" path="res://assets/skills/slash.png" id="1_njhjh"]
 [ext_resource type="Script" path="res://characters/players/bugeisha/cards/bugeisha_slash.gd" id="2_ayhqd"]
+[ext_resource type="AudioStream" uid="uid://dj8dgyp6rd07k" path="res://assets/sfx/Slash Damage.mp3" id="3_o1umd"]
 
 [resource]
 script = ExtResource("2_ayhqd")
@@ -11,3 +12,4 @@ target = 1
 cost = 1
 icon = ExtResource("1_njhjh")
 description = "[center]Deal [color=red]6[/color] Damage[/center]"
+sound = ExtResource("3_o1umd")

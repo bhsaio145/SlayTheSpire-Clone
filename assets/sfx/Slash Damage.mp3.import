@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dj8dgyp6rd07k"
+path="res://.godot/imported/Slash Damage.mp3-f4f0dadcc429c87bc3b681014ee1938a.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Slash Damage.mp3"
+dest_files=["res://.godot/imported/Slash Damage.mp3-f4f0dadcc429c87bc3b681014ee1938a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

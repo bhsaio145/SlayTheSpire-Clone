@@ -6,6 +6,7 @@ const TARGET_OFFSET := 20
 @export var stats: EnemyStats: set = set_enemy_stats
 
 @onready var sprite2d: Sprite2D = $Sprite2D
+@onready var collisionshape: CollisionShape2D = $CollisionShape2D
 @onready var targeted: ColorRect = $Targeted
 @onready var stats_ui: StatsUI = $StatsUI as StatsUI
 @onready var intent_ui: IntentUI = $IntentUI as IntentUI
@@ -42,6 +43,9 @@ func update_enemy() -> void:
 	if not is_inside_tree():
 		await ready
 	sprite2d.texture = stats.sprite
+	#change collision shape to match sprite
+	var sprite_size = sprite2d.texture.get_size()
+	collisionshape.shape.set_size(sprite_size)
 	targeted.position.y = -(sprite2d.get_rect().size.y / 2 + TARGET_OFFSET)
 	stats_ui.setup_stats(stats)
 	setup_ai()
@@ -73,9 +77,31 @@ func update_stats() -> void:
 func take_damage(damage: int) -> void:
 	if stats.health <= 0:
 		return
-	stats.take_damage(damage)
-	if stats.health <= 0:
-		queue_free()
+	
+	var tween := create_tween()
+	tween.tween_callback(enemy_shake.bind(16, 0.15))
+	tween.tween_callback(stats.take_damage.bind(damage))
+	tween.tween_interval(0.2)
+	
+	tween.finished.connect(
+		func():
+			if stats.health <= 0:
+				queue_free()
+	)
+
+func enemy_shake(strength: float, duration: float) -> void:
+	var orig_pos := position
+	var shake_count := 10
+	var tween := create_tween()
+	
+	for i in shake_count:
+		var shake_offset := Vector2(randf_range(-1.0, 1.0), randf_range(-1.0, 1.0))
+		var target := orig_pos + strength * shake_offset
+		if i%2 == 0:
+			target = orig_pos
+		tween.tween_property(self, "position", target, duration / float(shake_count))
+		strength *= 0.75
+	tween.finished.connect(func(): position = orig_pos)
 
 func _on_area_entered(_area: Area2D) -> void:
 	targeted.show()

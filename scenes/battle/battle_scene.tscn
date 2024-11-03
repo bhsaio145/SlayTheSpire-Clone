@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://byit6owstnc2k"]
+[gd_scene load_steps=17 format=3 uid="uid://byit6owstnc2k"]
 
 [ext_resource type="Script" path="res://scenes/battle/battle_scene.gd" id="1_5xdsv"]
 [ext_resource type="PackedScene" uid="uid://bl7jjy8vq3wyv" path="res://characters/enemies/enemy.tscn" id="1_8vfee"]
 [ext_resource type="Script" path="res://scenes/battle/hand.gd" id="1_jikge"]
 [ext_resource type="Texture2D" uid="uid://y5prlxxlskbo" path="res://assets/background/Battleground1.png" id="1_u23bk"]
 [ext_resource type="PackedScene" uid="uid://bp65ma8q53un1" path="res://resources/Card/Card Target Selector/card_target_selector.tscn" id="2_a82x8"]
+[ext_resource type="AudioStream" uid="uid://blpmbonv30o2q" path="res://assets/music/A Fool's Affair.wav" id="3_4oxna"]
 [ext_resource type="Resource" uid="uid://dvea0gw2q4c25" path="res://characters/players/bugeisha/bugeisha_stats.tres" id="3_rdfl4"]
 [ext_resource type="Script" path="res://characters/enemies/enemy_handler.gd" id="4_8vmf0"]
 [ext_resource type="Resource" uid="uid://bo051r0qeydp0" path="res://characters/enemies/slime_normal/slime_normal.tres" id="5_msdl2"]
@@ -13,6 +14,7 @@
 [ext_resource type="Script" path="res://characters/players/PlayerHandler.gd" id="8_ud1dj"]
 [ext_resource type="PackedScene" uid="uid://bjasjllvohe33" path="res://resources/Stats/action_point_ui.tscn" id="11_k3rjv"]
 [ext_resource type="Theme" uid="uid://cw3gs6oqrelur" path="res://default_theme.tres" id="12_i3dck"]
+[ext_resource type="PackedScene" uid="uid://6bjveey21r5c" path="res://scenes/battle/battle_over_panel.tscn" id="15_gxjod"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6qdbf"]
 size = Vector2(1360, 565)
@@ -20,6 +22,7 @@ size = Vector2(1360, 565)
 [node name="battle scene" type="Node2D"]
 script = ExtResource("1_5xdsv")
 player_stats = ExtResource("3_rdfl4")
+music = ExtResource("3_4oxna")
 metadata/_edit_lock_ = true
 
 [node name="background" type="Sprite2D" parent="."]
@@ -90,3 +93,9 @@ grow_vertical = 0
 theme = ExtResource("12_i3dck")
 disabled = true
 text = "End Turn"
+
+[node name="BattleOver" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="BattleOverPanel" parent="BattleOver" instance=ExtResource("15_gxjod")]
+visible = false

@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Events="*res://resources/global/events.gd"
+MusicPlayer="*res://resources/global/music_player.tscn"
+SfxPlayer="*res://resources/global/sfx_player.tscn"
 
 [display]
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bxhfkyildi2jm" path="res://characters/enemies/slime_normal/slime_normal_ai.tscn" id="1_3anuo"]
 [ext_resource type="Script" path="res://resources/Stats/enemy_stats.gd" id="1_63txr"]
-[ext_resource type="Texture2D" uid="uid://q771uvi1timh" path="res://assets/characters/slime_normal/slime_normal_sprite.png" id="2_0a6xw"]
+[ext_resource type="Texture2D" uid="uid://q771uvi1timh" path="res://assets/characters/slimes/slime_normal_sprite.png" id="2_0a6xw"]
 
 [resource]
 script = ExtResource("1_63txr")

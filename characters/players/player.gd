@@ -29,7 +29,29 @@ func update_stats() -> void:
 func take_damage(damage: int) -> void:
 	if stats.health <= 0:
 		return
-	stats.take_damage(damage)
-	if stats.health <= 0:
-		Events.player_died.emit()
-		queue_free()
+	
+	var tween := create_tween()
+	tween.tween_callback(player_shake.bind(20, 0.15))
+	tween.tween_callback(stats.take_damage.bind(damage))
+	tween.tween_interval(0.2)
+	
+	tween.finished.connect(
+		func():
+			if stats.health <= 0:
+				Events.player_died.emit()
+				queue_free()
+	)
+
+func player_shake(strength: float, duration: float) -> void:
+	var orig_pos := position
+	var shake_count := 15
+	var tween := create_tween()
+	
+	for i in shake_count:
+		var shake_offset := Vector2(randf_range(-1.0, 1.0), randf_range(-1.0, 1.0))
+		var target := orig_pos + strength * shake_offset
+		if i%2 == 0:
+			target = orig_pos
+		tween.tween_property(self, "position", target, duration / float(shake_count))
+		strength *= 0.75
+	tween.finished.connect(func(): position = orig_pos)
