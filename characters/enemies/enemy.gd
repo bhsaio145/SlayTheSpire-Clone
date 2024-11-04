@@ -6,13 +6,14 @@ const TARGET_OFFSET := 20
 @export var stats: EnemyStats: set = set_enemy_stats
 
 @onready var sprite2d: Sprite2D = $Sprite2D
-@onready var collisionshape: CollisionShape2D = $CollisionShape2D
-@onready var targeted: ColorRect = $Targeted
+@onready var collisionshape: CollisionShape2D = $CollisionShape
+@onready var targeted: TextureRect = $Targeted
 @onready var stats_ui: StatsUI = $StatsUI as StatsUI
 @onready var intent_ui: IntentUI = $IntentUI as IntentUI
 
 var enemy_action_picker: EnemyActionPicker
 var current_action: EnemyAction: set = set_current_action
+var sprite_size
 
 func set_current_action(value: EnemyAction) -> void:
 	current_action = value
@@ -44,9 +45,13 @@ func update_enemy() -> void:
 		await ready
 	sprite2d.texture = stats.sprite
 	#change collision shape to match sprite
-	var sprite_size = sprite2d.texture.get_size()
-	collisionshape.shape.set_size(sprite_size)
-	targeted.position.y = -(sprite2d.get_rect().size.y / 2 + TARGET_OFFSET)
+	sprite_size = sprite2d.texture.get_size()
+	collisionshape.shape.size = sprite_size
+	#moving UIs to match sprite
+	stats_ui.position.y = (sprite_size.y / 2)
+	intent_ui.position.y = -(sprite_size.y * 0.8)
+	targeted.size = sprite_size
+	targeted.position = (-1 * sprite_size)/ 2
 	stats_ui.setup_stats(stats)
 	setup_ai()
 	update_stats()

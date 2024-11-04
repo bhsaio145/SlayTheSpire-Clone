@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=4 format=3 uid="uid://bfxtwn1q5b8pr"]
+
+[ext_resource type="Script" path="res://resources/Stats/enemy_stats.gd" id="1_3uxxd"]
+[ext_resource type="PackedScene" uid="uid://bb5sp8r7m452" path="res://characters/enemies/slime_defender/slime_defender_ai.tscn" id="1_lq3i8"]
+[ext_resource type="Texture2D" uid="uid://86wdmpsmfrln" path="res://assets/characters/slimes/slime_defender_sprite.png" id="2_jyr3s"]
+
+[resource]
+script = ExtResource("1_3uxxd")
+ai = ExtResource("1_lq3i8")
+max_health = 20
+sprite = ExtResource("2_jyr3s")

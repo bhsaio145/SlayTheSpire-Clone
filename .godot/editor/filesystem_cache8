@@ -1,17 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730670314
+::res://::1730753281
 default_bus_layout.tres::AudioBusLayout::6726735650067532451::1730654008::0::1::::<><>::
 default_theme.tres::Theme::6375196601384446613::1729035820::0::1::::<><>::uid://7anolq42yehg::::res://assets/fonts/vinque rg.otf
 icon.svg::CompressedTexture2D::2902665713457868656::1729034594::1729034612::1::::<><>::
 README.md::TextFile::-1::1729138912::0::1::::<><>::
-::res://assets/::1730653413
+::res://assets/::1730690882
 ::res://assets/background/::1729445940
 background_License.txt::TextFile::-1::1492226936::0::1::::<><>::
 Battleground1.png::CompressedTexture2D::1747405307670237368::1547216139::1729445940::1::::<><>::
 ::res://assets/characters/::1730670305
 ::res://assets/characters/bugeisha/::1729207544
 bugeisha_sprite.png::CompressedTexture2D::3493597105870596910::1543049436::1729207544::1::::<><>::
-::res://assets/characters/slimes/::1730670372
+::res://assets/characters/slimes/::1730670396
 slime_attacker_sprite.png::CompressedTexture2D::1579608435133973674::1500555140::1730670396::1::::<><>::
 slime_defender_sprite.png::CompressedTexture2D::2381569335939856815::1500555146::1730670396::1::::<><>::
 slime_normal_sprite.png::CompressedTexture2D::1191072044055365303::1500555118::1730670315::1::::<><>::
@@ -26,37 +26,40 @@ Slash Damage.mp3::AudioStreamMP3::7859280260611129462::1730652913::1730653416::1
 block.png::CompressedTexture2D::6630699475135134965::1309707156::1729297212::1::::<><>::
 slash.png::CompressedTexture2D::2191704922103730787::1309707146::1729448005::1::::<><>::
 sweeping slash.png::CompressedTexture2D::7853094745128937450::1309707318::1730653060::1::::<><>::
+::res://assets/ui/::1730695129
+targetted.png::CompressedTexture2D::3427939081366834483::1730691112::1730695129::1::::<><>::
 ::res://characters/::1729207130
-::res://characters/enemies/::1730670318
-enemy.gd::GDScript::-1::1730594718::0::1::::Enemy<>Area2D<>::
-enemy.tscn::PackedScene::3225121889437013597::1730670318::0::1::::<><>::uid://q771uvi1timh::::res://assets/characters/slimes/slime_normal_sprite.png<>res://characters/enemies/enemy.gd<>uid://5ungvd7phcvp::::res://resources/Stats/stats_ui.tscn<>uid://dfrinve8k60at::::res://resources/Intent/intent_ui.tscn
+::res://characters/enemies/::1730749922
+enemy.gd::GDScript::-1::1730748629::0::1::::Enemy<>Area2D<>::
+enemy.tscn::PackedScene::3225121889437013597::1730749922::0::1::::<><>::uid://q771uvi1timh::::res://assets/characters/slimes/slime_normal_sprite.png<>res://characters/enemies/enemy.gd<>uid://5ungvd7phcvp::::res://resources/Stats/stats_ui.tscn<>uid://bo3rwkfhg2pt0::::res://assets/ui/targetted.png<>uid://dfrinve8k60at::::res://resources/Intent/intent_ui.tscn
 enemy_action.gd::GDScript::-1::1730653323::0::1::::EnemyAction<>Node<>::
 enemy_action_picker.gd::GDScript::-1::1730060217::0::1::::EnemyActionPicker<>Node<>::
 enemy_action_picker.tscn::PackedScene::3732760851468609755::1730060217::0::1::::<><>::res://characters/enemies/enemy_action_picker.gd
 enemy_handler.gd::GDScript::-1::1730064441::0::1::::EnemyHandler<>Node2D<>::
-::res://characters/enemies/slime_normal/::1730670318
-slime_normal.tres::Resource/Resource::3422542811151892323::1730062632::0::1::::<><>::uid://bxhfkyildi2jm::::res://characters/enemies/slime_normal/slime_normal_ai.tscn<>res://resources/Stats/enemy_stats.gd<>uid://q771uvi1timh::::res://assets/characters/slime_normal/slime_normal_sprite.png
-slime_normal_ai.tscn::PackedScene::4015537447972129018::1730670318::0::1::::<><>::res://characters/enemies/enemy_action_picker.gd<>res://characters/enemies/slime_normal/slime_normal_attack.gd<>res://characters/enemies/slime_normal/slime_normal_block.gd<>uid://6hxcbgsld772::::res://assets/skills/slash.png<>res://resources/Intent/intent.gd<>res://characters/enemies/slime_normal/slime_normal_strong_block.gd<>uid://dj8dgyp6rd07k::::res://assets/sfx/Slash Damage.mp3<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>uid://b5d2h0636mrol::::res://assets/sfx/Block Up.wav
+::res://characters/enemies/slime_defender/::1730744486
+::res://characters/enemies/slime_normal/::1730749969
+slime_normal.tres::Resource/Resource::3422542811151892323::1730695577::0::1::::<><>::uid://bxhfkyildi2jm::::res://characters/enemies/slime_normal/slime_normal_ai.tscn<>res://resources/Stats/enemy_stats.gd<>uid://q771uvi1timh::::res://assets/characters/slimes/slime_normal_sprite.png
+slime_normal_ai.tscn::PackedScene::4015537447972129018::1730749968::0::1::::<><>::res://characters/enemies/enemy_action_picker.gd<>res://characters/enemies/slime_normal/slime_normal_attack.gd<>res://characters/enemies/slime_normal/slime_normal_block.gd<>uid://6hxcbgsld772::::res://assets/skills/slash.png<>res://resources/Intent/intent.gd<>res://characters/enemies/slime_normal/slime_normal_strong_block.gd<>uid://dj8dgyp6rd07k::::res://assets/sfx/Slash Damage.mp3<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>uid://b5d2h0636mrol::::res://assets/sfx/Block Up.wav
 slime_normal_attack.gd::GDScript::-1::1730653916::0::1::::<>EnemyAction<>::
-slime_normal_block.gd::GDScript::-1::1730653980::0::1::::<>EnemyAction<>::
-slime_normal_strong_block.gd::GDScript::-1::1730653980::0::1::::<>EnemyAction<>::
-::res://characters/players/::1730670318
+slime_normal_block.gd::GDScript::-1::1730749898::0::1::::<>EnemyAction<>::
+slime_normal_strong_block.gd::GDScript::-1::1730749969::0::1::::<>EnemyAction<>::
+::res://characters/players/::1730749922
 player.gd::GDScript::-1::1730594864::0::1::::Player<>Node2D<>::
-player.tscn::PackedScene::7300422429416277311::1730670318::0::1::::<><>::uid://bp1lbfg532bgg::::res://assets/characters/bugeisha/bugeisha_sprite.png<>res://characters/players/player.gd<>uid://5ungvd7phcvp::::res://resources/Stats/stats_ui.tscn
+player.tscn::PackedScene::7300422429416277311::1730749922::0::1::::<><>::uid://bp1lbfg532bgg::::res://assets/characters/bugeisha/bugeisha_sprite.png<>res://characters/players/player.gd<>uid://5ungvd7phcvp::::res://resources/Stats/stats_ui.tscn
 PlayerHandler.gd::GDScript::-1::1729640606::0::1::::PlayerHandler<>Node<>::
-::res://characters/players/bugeisha/::1730670318
-bugeisha_starting_deck.tres::Resource/CardPile::7070971649855933034::1730670318::0::1::::<><>::res://resources/Card/Card Pile/card_pile.gd<>uid://b77bkrmwhme57::::res://characters/players/bugeisha/cards/bugeisha_slash.tres<>uid://do6gr00gv7vib::::res://characters/players/bugeisha/cards/bugeisha_block.tres
+::res://characters/players/bugeisha/::1730748594
+bugeisha_starting_deck.tres::Resource/CardPile::7070971649855933034::1730748594::0::1::::<><>::res://resources/Card/Card Pile/card_pile.gd<>uid://b77bkrmwhme57::::res://characters/players/bugeisha/cards/bugeisha_slash.tres<>uid://do6gr00gv7vib::::res://characters/players/bugeisha/cards/bugeisha_block.tres
 bugeisha_stats.tres::Resource/Resource::8641530273716923652::1729296858::0::1::::<><>::res://resources/Stats/player_stats.gd<>uid://bp1lbfg532bgg::::res://assets/characters/bugeisha/bugeisha_sprite.png<>uid://c70h4tyeu4wsg::::res://characters/players/bugeisha/bugeisha_starting_deck.tres
-::res://characters/players/bugeisha/cards/::1730670318
+::res://characters/players/bugeisha/cards/::1730748594
 bugeisha_block.gd::GDScript::-1::1730653959::0::1::::<>Card<>::
-bugeisha_block.tres::Resource::8206297584846413493::1730670318::0::1::::<><>::uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://characters/players/bugeisha/cards/bugeisha_block.gd<>uid://b5d2h0636mrol::::res://assets/sfx/Block Up.wav
+bugeisha_block.tres::Resource::8206297584846413493::1730748594::0::1::::<><>::uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://characters/players/bugeisha/cards/bugeisha_block.gd<>uid://b5d2h0636mrol::::res://assets/sfx/Block Up.wav
 bugeisha_slash.gd::GDScript::-1::1730653959::0::1::::<>Card<>::
-bugeisha_slash.tres::Resource::4698603255615882044::1730670318::0::1::::<><>::uid://6hxcbgsld772::::res://assets/skills/slash.png<>res://characters/players/bugeisha/cards/bugeisha_slash.gd<>uid://dj8dgyp6rd07k::::res://assets/sfx/Slash Damage.mp3
+bugeisha_slash.tres::Resource::4698603255615882044::1730748594::0::1::::<><>::uid://6hxcbgsld772::::res://assets/skills/slash.png<>res://characters/players/bugeisha/cards/bugeisha_slash.gd<>uid://dj8dgyp6rd07k::::res://assets/sfx/Slash Damage.mp3
 ::res://resources/::1730316050
-::res://resources/Card/::1730670318
+::res://resources/Card/::1730749921
 card.gd::GDScript::-1::1730653194::0::1::::Card<>Resource<>::
 card_ui.gd::GDScript::-1::1730229244::0::1::::CardUI<>Control<>::
-card_ui.tscn::PackedScene::3152587869019180067::1730670318::0::1::::<><>::res://resources/Card/card_ui.gd<>uid://cw3gs6oqrelur::::res://default_theme.tres<>res://resources/Card/Card States/card_state_machine.gd<>uid://bw0tqv6iahr42::::res://resources/Card/Card States/card_base_stylebox.tres<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://resources/Card/Card States/card_state_base.gd<>res://resources/Card/Card States/card_state_clicked.gd<>res://resources/Card/Card States/card_state_dragging.gd<>res://resources/Card/Card States/card_state_aiming.gd<>res://resources/Card/Card States/card_state_released.gd
+card_ui.tscn::PackedScene::3152587869019180067::1730749921::0::1::::<><>::res://resources/Card/card_ui.gd<>uid://cw3gs6oqrelur::::res://default_theme.tres<>res://resources/Card/Card States/card_state_machine.gd<>uid://bw0tqv6iahr42::::res://resources/Card/Card States/card_base_stylebox.tres<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://resources/Card/Card States/card_state_base.gd<>res://resources/Card/Card States/card_state_clicked.gd<>res://resources/Card/Card States/card_state_dragging.gd<>res://resources/Card/Card States/card_state_aiming.gd<>res://resources/Card/Card States/card_state_released.gd
 ::res://resources/Card/Card Pile/::1729293570
 card_pile.gd::GDScript::-1::1729293570::0::1::::CardPile<>Resource<>::
 ::res://resources/Card/Card States/::1730229276
@@ -86,21 +89,21 @@ sound_player.gd::GDScript::-1::1730651879::0::1::::<>Node<>::
 intent.gd::GDScript::-1::1730316115::0::1::::Intent<>Resource<>::
 intent_ui.gd::GDScript::-1::1730317328::0::1::::IntentUI<>HBoxContainer<>::
 intent_ui.tscn::PackedScene::7545810753034927023::1730652698::0::1::::<><>::uid://6hxcbgsld772::::res://assets/skills/slash.png<>res://resources/Intent/intent_ui.gd
-::res://resources/Stats/::1730670318
+::res://resources/Stats/::1730749922
 action_point_ui.gd::GDScript::-1::1729637134::0::1::::ActionPointUI<>Panel<>::
 action_point_ui.tscn::PackedScene::3019229850173166428::1730316592::0::1::::<><>::uid://cw3gs6oqrelur::::res://default_theme.tres<>res://resources/Stats/action_point_ui.gd
 enemy_stats.gd::GDScript::-1::1730043435::0::1::::EnemyStats<>Stats<>::
 player_stats.gd::GDScript::-1::1729296306::0::1::::PlayerStats<>Stats<>::
 stats.gd::GDScript::-1::1729294939::0::1::::Stats<>Resource<>::
 stats_ui.gd::GDScript::-1::1730043997::0::1::::StatsUI<>Control<>::
-stats_ui.tscn::PackedScene::2147754008990583497::1730670318::0::1::::<><>::uid://cw3gs6oqrelur::::res://default_theme.tres<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://resources/Stats/stats_ui.gd
+stats_ui.tscn::PackedScene::2147754008990583497::1730749922::0::1::::<><>::uid://cw3gs6oqrelur::::res://default_theme.tres<>uid://c1p7wfiocuqm4::::res://assets/skills/block.png<>res://resources/Stats/stats_ui.gd
 ::res://scenes/::1730315820
-::res://scenes/battle/::1730670318
+::res://scenes/battle/::1730749923
 BattleUI.gd::GDScript::-1::1729639316::0::1::::BattleUI<>CanvasLayer<>::
 battle_over_panel.gd::GDScript::-1::1730664022::0::1::::BattleOverPanel<>Panel<>::
-battle_over_panel.tscn::PackedScene::2178502702540156738::1730670318::0::1::::<><>::res://scenes/battle/battle_over_panel.gd
+battle_over_panel.tscn::PackedScene::2178502702540156738::1730749923::0::1::::<><>::res://scenes/battle/battle_over_panel.gd
 battle_scene.gd::GDScript::-1::1730664128::0::1::::<>Node2D<>::
-battle_scene.tscn::PackedScene::4088677705668312448::1730670318::0::1::::<><>::res://scenes/battle/battle_scene.gd<>uid://bl7jjy8vq3wyv::::res://characters/enemies/enemy.tscn<>res://scenes/battle/hand.gd<>uid://y5prlxxlskbo::::res://assets/background/Battleground1.png<>uid://bp65ma8q53un1::::res://resources/Card/Card Target Selector/card_target_selector.tscn<>uid://blpmbonv30o2q::::res://assets/music/A Fool's Affair.wav<>uid://dvea0gw2q4c25::::res://characters/players/bugeisha/bugeisha_stats.tres<>res://characters/enemies/enemy_handler.gd<>uid://bo051r0qeydp0::::res://characters/enemies/slime_normal/slime_normal.tres<>res://scenes/battle/BattleUI.gd<>uid://dcam5j1ka4ed8::::res://characters/players/player.tscn<>res://characters/players/PlayerHandler.gd<>uid://bjasjllvohe33::::res://resources/Stats/action_point_ui.tscn<>uid://cw3gs6oqrelur::::res://default_theme.tres<>uid://6bjveey21r5c::::res://scenes/battle/battle_over_panel.tscn
+battle_scene.tscn::PackedScene::4088677705668312448::1730749921::0::1::::<><>::res://scenes/battle/battle_scene.gd<>uid://bl7jjy8vq3wyv::::res://characters/enemies/enemy.tscn<>res://scenes/battle/hand.gd<>uid://y5prlxxlskbo::::res://assets/background/Battleground1.png<>uid://bp65ma8q53un1::::res://resources/Card/Card Target Selector/card_target_selector.tscn<>uid://blpmbonv30o2q::::res://assets/music/A Fool's Affair.wav<>uid://dvea0gw2q4c25::::res://characters/players/bugeisha/bugeisha_stats.tres<>res://characters/enemies/enemy_handler.gd<>uid://bo051r0qeydp0::::res://characters/enemies/slime_normal/slime_normal.tres<>res://scenes/battle/BattleUI.gd<>uid://dcam5j1ka4ed8::::res://characters/players/player.tscn<>res://characters/players/PlayerHandler.gd<>uid://bjasjllvohe33::::res://resources/Stats/action_point_ui.tscn<>uid://cw3gs6oqrelur::::res://default_theme.tres<>uid://6bjveey21r5c::::res://scenes/battle/battle_over_panel.tscn
 hand.gd::GDScript::-1::1730229204::0::1::::Hand<>HBoxContainer<>::
 ::res://scenes/character selection/::1729034930
 ::res://scenes/event/::1729034935

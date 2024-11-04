@@ -1,3 +1,5 @@
+res://characters/enemies/slime_defender
+res://characters/players/bugeisha/cards
 res://scenes/battle
 res://resources/global
 res://
@@ -10,7 +12,5 @@ res://resources/Card/Card States
 res://assets/skills
 res://characters/players/bugeisha
 res://resources/Card/Card Target Selector
-res://assets/characters/slime_normal
-res://characters/players/bugeisha/cards
 res://resources
 res://resources/Card

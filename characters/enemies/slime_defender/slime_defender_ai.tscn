@@ -1,0 +1,37 @@
+[gd_scene load_steps=11 format=3 uid="uid://bb5sp8r7m452"]
+
+[ext_resource type="Script" path="res://characters/enemies/enemy_action_picker.gd" id="1_ck0wc"]
+[ext_resource type="Script" path="res://characters/enemies/slime_defender/slime_defender_attack.gd" id="2_eq0o4"]
+[ext_resource type="Texture2D" uid="uid://6hxcbgsld772" path="res://assets/skills/slash.png" id="3_nj4ja"]
+[ext_resource type="Script" path="res://resources/Intent/intent.gd" id="4_0dfap"]
+[ext_resource type="AudioStream" uid="uid://dj8dgyp6rd07k" path="res://assets/sfx/Slash Damage.mp3" id="5_oxvhb"]
+[ext_resource type="Script" path="res://characters/enemies/slime_defender/slime_defender_block.gd" id="6_08ggp"]
+[ext_resource type="Texture2D" uid="uid://c1p7wfiocuqm4" path="res://assets/skills/block.png" id="7_c1qqq"]
+[ext_resource type="AudioStream" uid="uid://b5d2h0636mrol" path="res://assets/sfx/Block Up.wav" id="8_gtqcc"]
+
+[sub_resource type="Resource" id="Resource_p4lwt"]
+script = ExtResource("4_0dfap")
+number = "5"
+icon = ExtResource("3_nj4ja")
+
+[sub_resource type="Resource" id="Resource_h2f8f"]
+script = ExtResource("4_0dfap")
+number = ""
+icon = ExtResource("7_c1qqq")
+
+[node name="Slime Defender AI" type="Node"]
+script = ExtResource("1_ck0wc")
+
+[node name="Attack" type="Node" parent="."]
+script = ExtResource("2_eq0o4")
+intent = SubResource("Resource_p4lwt")
+type = 1
+sound = ExtResource("5_oxvhb")
+chance_weight = 1.0
+
+[node name="Block" type="Node" parent="."]
+script = ExtResource("6_08ggp")
+intent = SubResource("Resource_h2f8f")
+type = 1
+sound = ExtResource("8_gtqcc")
+chance_weight = 2.0

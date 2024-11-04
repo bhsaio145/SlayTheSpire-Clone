@@ -1,16 +1,6 @@
 extends EnemyAction
 
-@export var block := 12
-@export var hp_threshold := 0.5
-
-var already_used := false
-
-func is_performable() -> bool:
-	if not enemy or already_used:
-		return false
-	var hp_low := enemy.stats.health <= (enemy.stats.max_health * hp_threshold)
-	already_used = hp_low
-	return hp_low
+@export var block := 14
 
 func perform_action() -> void:
 	if not enemy or not target:
