@@ -8,8 +8,8 @@ const TARGET_OFFSET := 20
 @onready var sprite2d: Sprite2D = $Sprite2D
 @onready var collisionshape: CollisionShape2D = $CollisionShape
 @onready var targeted: TextureRect = $Targeted
-@onready var stats_ui: StatsUI = $StatsUI as StatsUI
-@onready var intent_ui: IntentUI = $IntentUI as IntentUI
+@onready var stats_ui: StatsUI = $StatsUI
+@onready var intent_ui: IntentUI = $IntentUI
 
 var enemy_action_picker: EnemyActionPicker
 var current_action: EnemyAction: set = set_current_action

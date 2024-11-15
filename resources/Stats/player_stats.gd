@@ -1,6 +1,11 @@
 class_name PlayerStats
 extends Stats
 
+@export_group("Visual")
+@export var character_name: String
+@export_multiline var description: String
+
+@export_group("Gameplay Data")
 @export var starting_deck: CardPile
 @export var card_draw: int
 @export var max_action_points: int

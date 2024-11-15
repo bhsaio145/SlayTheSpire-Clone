@@ -14,7 +14,7 @@ const HOVER_STYLEBOX := preload("res://resources/Card/Card States/card_hover_sty
 @onready var icon = $Icon
 @onready var description = $"Description Margin/Description"
 @onready var drop_detector = $DropDetector
-@onready var cardStateMachineNode: CardStateMachine = $CardStateMachine as CardStateMachine
+@onready var cardStateMachineNode: CardStateMachine = $CardStateMachine
 @onready var targets: Array[Node] = []
 
 var original_index := 0

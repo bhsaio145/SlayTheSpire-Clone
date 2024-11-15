@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PlayerStats" load_steps=4 format=3 uid="uid://dummrjvd6pswl"]
+
+[ext_resource type="Script" path="res://resources/Stats/player_stats.gd" id="1_bt0s6"]
+[ext_resource type="Texture2D" uid="uid://dlip0rj71ufwu" path="res://assets/characters/assassin/assassin_sprite.png" id="2_hncsw"]
+[ext_resource type="Resource" uid="uid://c70h4tyeu4wsg" path="res://characters/players/bugeisha/bugeisha_starting_deck.tres" id="3_wpcix"]
+
+[resource]
+script = ExtResource("1_bt0s6")
+character_name = "Assassin"
+description = "Just a lot of Stabbing"
+starting_deck = ExtResource("3_wpcix")
+card_draw = 5
+max_action_points = 3
+max_health = 50
+sprite = ExtResource("2_hncsw")

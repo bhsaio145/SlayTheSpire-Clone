@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PlayerStats" load_steps=4 format=3 uid="uid://cyso1md10haec"]
+
+[ext_resource type="Script" path="res://resources/Stats/player_stats.gd" id="1_81qu2"]
+[ext_resource type="Texture2D" uid="uid://506xb1um1e4a" path="res://assets/characters/gunner/gunner_sprite.png" id="2_1kjy0"]
+[ext_resource type="Resource" uid="uid://c70h4tyeu4wsg" path="res://characters/players/bugeisha/bugeisha_starting_deck.tres" id="3_aaddj"]
+
+[resource]
+script = ExtResource("1_81qu2")
+character_name = "Gunner"
+description = "Pew Pew"
+starting_deck = ExtResource("3_aaddj")
+card_draw = 5
+max_action_points = 3
+max_health = 50
+sprite = ExtResource("2_1kjy0")

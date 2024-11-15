@@ -1,16 +1,14 @@
-res://characters/enemies/slime_normal/slime_normal_ai.tscn
+res://scenes/battle/battle_scene.tscn
 res://characters/players/bugeisha/cards/bugeisha_slash.tres
 res://characters/players/bugeisha/cards/bugeisha_block.tres
 res://characters/players/bugeisha/bugeisha_starting_deck.tres
-res://characters/enemies/slime_normal/slime_normal.tres
-res://characters/enemies/slime_defender/slime_defender.tres
-res://characters/enemies/slime_defender/slime_defender_ai.tscn
-res://characters/enemies/slime_defender/slime_defender_attack.gd
-res://characters/enemies/slime_defender/slime_defender_block.gd
-res://scenes/battle/battle_scene.tscn
+res://characters/players/bugeisha/bugeisha_stats.tres
+res://characters/players/gunner/gunner_stats.tres
+res://characters/players/assassin/assassin_stats.tres
 res://resources/Card/card_ui.tscn
 res://resources/Stats/stats_ui.tscn
 res://characters/players/player.tscn
 res://characters/enemies/enemy.tscn
-res://scenes/battle/battle_over_panel.tscn
-res://characters/enemies/enemy.gd
+res://characters/enemies/slime_normal/slime_normal_ai.tscn
+res://scenes/character selection/character_selection.tscn
+res://scenes/main menu/main_menu.tscn

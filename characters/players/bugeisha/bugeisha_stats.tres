@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_lobjn")
+character_name = "Bugeisha"
+description = "Warriors trained to protect their honor"
 starting_deck = ExtResource("2_rtxy7")
 card_draw = 5
 max_action_points = 3

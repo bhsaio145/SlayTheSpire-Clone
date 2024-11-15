@@ -1,0 +1,150 @@
+[gd_scene load_steps=8 format=3 uid="uid://cjq5fix54f740"]
+
+[ext_resource type="Script" path="res://scenes/character selection/character_selection.gd" id="1_wan86"]
+[ext_resource type="Texture2D" uid="uid://bp1lbfg532bgg" path="res://assets/characters/bugeisha/bugeisha_sprite.png" id="2_r17gg"]
+[ext_resource type="Texture2D" uid="uid://6hxcbgsld772" path="res://assets/skills/slash.png" id="3_akr5s"]
+[ext_resource type="Texture2D" uid="uid://ch8qgs6vpiub6" path="res://assets/skills/shoot.png" id="4_wtax5"]
+[ext_resource type="Texture2D" uid="uid://cuaddgkm3al1v" path="res://assets/skills/stab.png" id="5_83wy5"]
+
+[sub_resource type="Gradient" id="Gradient_bp22u"]
+colors = PackedColorArray(0.183157, 0.0567184, 2.40654e-08, 1, 0, 0.0911335, 0.114151, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_sgv80"]
+gradient = SubResource("Gradient_bp22u")
+width = 100
+
+[node name="CharacterSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wan86")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_sgv80")
+
+[node name="CharacterName" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -567.5
+offset_top = 54.0
+offset_right = 567.5
+offset_bottom = 175.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.20871, 0.20871, 0.20871, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 100
+text = "Character Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -346.5
+offset_top = 159.0
+offset_right = 346.5
+offset_bottom = 362.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.20871, 0.20871, 0.20871, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 50
+text = "Something the character does"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CharacterPreview" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = 301.0
+offset_right = 560.0
+offset_bottom = 769.0
+texture = ExtResource("2_r17gg")
+expand_mode = 1
+flip_h = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 574.0
+offset_top = 443.0
+offset_right = 1099.0
+offset_bottom = 568.0
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="BugeishaBtn" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 2
+toggle_mode = true
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/BugeishaBtn"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_akr5s")
+expand_mode = 1
+
+[node name="GunnerBtn" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 2
+toggle_mode = true
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/GunnerBtn"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_wtax5")
+expand_mode = 1
+
+[node name="AssassinBtn" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 2
+toggle_mode = true
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/AssassinBtn"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_83wy5")
+expand_mode = 1
+
+[node name="ContinueBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1196.0
+offset_top = 680.0
+offset_right = 1300.0
+offset_bottom = 722.0
+text = "Continue"
+
+[node name="BackBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 22.0
+offset_right = 99.0
+offset_bottom = 51.0
+text = "Back"
+
+[connection signal="pressed" from="HBoxContainer/BugeishaBtn" to="." method="_on_bugeisha_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/GunnerBtn" to="." method="_on_gunner_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/AssassinBtn" to="." method="_on_assassin_btn_pressed"]
+[connection signal="pressed" from="ContinueBtn" to="." method="_on_continue_btn_pressed"]
+[connection signal="pressed" from="BackBtn" to="." method="_on_back_btn_pressed"]

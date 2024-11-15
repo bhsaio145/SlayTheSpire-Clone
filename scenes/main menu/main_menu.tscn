@@ -1,0 +1,87 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjx8ca1biumh1"]
+
+[ext_resource type="Script" path="res://scenes/main menu/main_menu.gd" id="1_ndd1b"]
+
+[sub_resource type="Gradient" id="Gradient_bp22u"]
+colors = PackedColorArray(0.183157, 0.0567184, 2.40654e-08, 1, 0, 0.0911335, 0.114151, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_sgv80"]
+gradient = SubResource("Gradient_bp22u")
+width = 100
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ndd1b")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_sgv80")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -567.5
+offset_top = 100.0
+offset_right = 567.5
+offset_bottom = 221.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.20871, 0.20871, 0.20871, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 100
+text = "PLACEHOLDERNAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -123.5
+offset_top = -48.0
+offset_right = 123.5
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="ContinueBtn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Continue"
+
+[node name="StartBtn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Start"
+
+[node name="CreditBtn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Credit"
+
+[node name="QuitBtn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/ContinueBtn" to="." method="_on_continue_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartBtn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/CreditBtn" to="." method="_on_credit_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitBtn" to="." method="_on_quit_btn_pressed"]
