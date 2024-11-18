@@ -12,3 +12,6 @@ res://characters/enemies/enemy.tscn
 res://characters/enemies/slime_normal/slime_normal_ai.tscn
 res://scenes/character selection/character_selection.tscn
 res://scenes/main menu/main_menu.tscn
+res://scenes/battle/hand.gd
+res://resources/Card/card_ui.gd
+res://resources/Card/Card States/card_state_base.gd

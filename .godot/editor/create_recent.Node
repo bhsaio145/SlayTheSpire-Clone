@@ -1,6 +1,7 @@
+Control
+HBoxContainer
 Button
 TextureRect
-HBoxContainer
 Sprite2D
 Label
 VBoxContainer
@@ -11,4 +12,3 @@ AudioStreamPlayer
 Node2D
 MarginContainer
 RichTextLabel
-ColorRect

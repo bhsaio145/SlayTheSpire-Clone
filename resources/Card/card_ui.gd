@@ -18,6 +18,8 @@ const HOVER_STYLEBOX := preload("res://resources/Card/Card States/card_hover_sty
 @onready var targets: Array[Node] = []
 
 var original_index := 0
+var original_position: Vector2
+var original_rotation := 0
 var parent: Control
 var tween: Tween
 var playable := true : set = _set_playable
@@ -53,6 +55,12 @@ func _set_playable(value: bool) -> void:
 		cost.remove_theme_color_override("font_color")
 		icon.modulate = Color(1,1,1,1)
 		description.modulate = Color(1,1,1,1)
+
+func set_position_and_rotation(new_pos: Vector2, new_rotate: int) -> void:
+	original_position = new_pos
+	original_rotation = new_rotate
+	self.position = new_pos
+	self.rotation_degrees = new_rotate
 
 func _set_player_stats(value: PlayerStats) -> void:
 	player_stats = value
